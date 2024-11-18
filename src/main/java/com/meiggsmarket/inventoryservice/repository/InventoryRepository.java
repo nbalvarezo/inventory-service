@@ -10,4 +10,6 @@ public interface InventoryRepository extends JpaRepository<Inventory, Long> {
 
 
     Optional<Inventory> findBySkuCode();
+
+    boolean isInStock(String skuCode);
 }
